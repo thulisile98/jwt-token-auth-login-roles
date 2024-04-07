@@ -30,11 +30,11 @@ public class Issues {
     private Date solvedAt;
 
     @ManyToOne
-    @JoinColumn(name = "id", nullable = false)
+    @JoinColumn(name = "id")
     private Users users;
 
     @ManyToOne
-    @JoinColumn(name = "residence_id", nullable = false)
+    @JoinColumn(name = "residence_id", nullable = true)
     private Residence residence;
 
 

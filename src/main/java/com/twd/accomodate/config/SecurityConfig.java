@@ -35,6 +35,7 @@ public class SecurityConfig {
                         .requestMatchers("/admin/**").hasAnyAuthority("ADMIN")
                         .requestMatchers("/user/**").hasAnyAuthority("USER")
                         .requestMatchers("/review/**").hasAnyAuthority("USER")
+                        .requestMatchers("/issues/**").hasAnyAuthority("USER")
                         .requestMatchers("/application/**").hasAnyAuthority("USER")
                         .requestMatchers("/adminuser/**").hasAnyAuthority("USER", "ADMIN")
                         .anyRequest().authenticated())
